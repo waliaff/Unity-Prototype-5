@@ -16,18 +16,7 @@ public class GameManager : MonoBehaviour
     private int score;
     public GameObject titleScreen;
     float spawnIntervals = 2.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     IEnumerator SpawnTargets()
     {
         while (isGameActive)
