@@ -25,12 +25,6 @@ public class Target : MonoBehaviour
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnMouseDown()
     {
         if (gameManager.isGameActive)
@@ -49,8 +43,8 @@ public class Target : MonoBehaviour
         gameManager.GameOver();
         }
         
-
     }
+    
     Vector3 RandomForce()
     {
         return Vector3.up * Random.Range(minForce, maxForce);
